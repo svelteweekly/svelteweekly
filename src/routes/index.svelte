@@ -1,50 +1,44 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+  import successkid from "images/successkid.jpg";
 </script>
 
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+  h1,
+  .subscribe,
+  p {
+    text-align: center;
+    margin: 0 auto;
+  }
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
+  h1 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+  }
 
-	figure {
-		margin: 0 0 1em 0;
-	}
+  p {
+    margin: 1em auto;
+  }
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+  @media (min-width: 480px) {
+    h1 {
+      font-size: 4em;
+    }
+  }
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>A community-driven weekly newsletter about Svelte</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1>Welcome to the weekly newsletter about Svelte!</h1>
 
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+<p>Subscribe to our mailing list to get the summary about Svelte every week.</p>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="subscribe">
+  <form action="">
+    <input type="text" name="email" />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>

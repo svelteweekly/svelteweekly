@@ -1,6 +1,5 @@
 <script context="module" lang="ts">
   import posts from "./_posts";
-  console.log(posts);
 
   export async function preload({ params }) {
     const post = posts.filter((p) => p.metadata.slug == params.slug);
