@@ -43,8 +43,12 @@ declare module "../../posts/*.md" {
     metadata: {
       slug: string;
       title: string;
+      summary: string;
+      date: string;
     };
     html: string;
+    filename: string;
+    path: string;
   }[];
   export = value;
 }
