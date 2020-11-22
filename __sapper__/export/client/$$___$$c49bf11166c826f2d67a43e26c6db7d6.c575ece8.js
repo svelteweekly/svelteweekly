@@ -1,0 +1,1 @@
+var t=[{html:'<h1 id="test">Test</h1>\n<p>content</p>',metadata:{slug:"test",title:"Everything you wanted to know",summary:"A short post about ...",date:"2020-04-01T00:00:00.000Z"},filename:"test.md",path:"/home/jungle/repo/svelteweekly/src/posts/test.md"}];export{t as p};
